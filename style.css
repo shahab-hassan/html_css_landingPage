@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+:root{
+    --main: #C8C8C8;
+    --white: white;
+    --black: black;
+    --light: #454545;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Images/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    margin: 20px auto;
+}
+nav{
+    width: 90%;
+    margin: auto;
+}
+.leftSide{
+    width: 60%;
+    gap: 80px;
+    justify-content: left;
+}
+.rightSide{
+    width: 40%;
+    justify-content: right;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.ul li{
+    list-style: none;
+}
+.ul li a{
+    text-decoration: none;
+    color: var(--main);
+    transition: 0.1s;
+}
+.ul li a i{
+    margin-right: 9px;
+}
+.line{
+    width: 2px;
+    height: 25px;
+    background: var(--main);
+}
+.leftSide .ul li:first-child a{
+    color: var(--white);
+}
+.ul li:hover a{
+    color: var(--white);
+}
+
+
+
+main{
+    width: 100%;
+}
+.mainDiv{
+    width: 88%;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+.mainRightSide{
+    width: 59.5%;
+    flex-direction: column;
+}
+.mainImgDiv{
+    margin-bottom: 30px;
+}
+.mainImgDiv .mainImg{
+    width: 600px;
+}
+.subImgsDiv{
+    gap: 90px;
+}
+.subImgsDiv .subImgs{
+    width: 130px;
+}
+
+.mainLeftSide{
+    width: 35%;
+}
+.mainHeadings p:nth-child(1){
+    color: var(--main);
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+}
+.mainHeadings p:nth-child(2){
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.description{
+    margin: 30px 0px;
+    width: 80%;
+}
+.descriptionDiv{
+    font-size: 13px;
+    color: var(--main);
+    line-height: 30px;
+}
+
+.reviewsDiv{
+    justify-content: left;
+    margin-bottom: 30px;
+}
+.reviewsDiv .reviews{
+    color: var(--main);
+    font-weight: 500;
+}
+.reviewsDiv .line{
+    margin: 0px 25px;
+}
+.reviewsDiv .stars i{
+    color: var(--main);
+    margin-right: 8px;
+    font-size: 12px;
+}
+.priceDiv{
+    justify-content: left;
+}
+.priceDiv .price{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.priceDiv .cartBtn{
+    font-size: 12px;
+    color: var(--white);
+    background-color: var(--light);
+    border-radius: 125px;
+    padding: 11px 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.priceDiv .cartBtn:hover{
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 500;
+}
